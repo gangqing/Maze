@@ -69,7 +69,7 @@ class Robot(object):
         # Qtable[state] ={'u':xx, 'd':xx, ...}
         # If Qtable[state] already exist, then do not change it.
         if state not in self.Qtable.keys():
-            self.Qtable[state] = {'u':0, 'd':0, 'r':0,'l':0}
+                self.Qtable[state] = {'u':0., 'd':0., 'r':0.,'l':0.}
 
     def choose_action(self):
         """
